@@ -33,3 +33,9 @@ let useNumbers = confirm("Do you want your new password to include numbers?");
 if (useNumbers === true) {
     masterArray += numbers;
 }
+
+let useLowerCase = confirm ("Do you want your new password to include lowercase letters?");
+if (useLowerCase === true) {
+    masterArray += lowerCase;
+}
+
