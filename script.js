@@ -8,9 +8,10 @@ function writePassword() {
 }
 
 let specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "{", "}", "~", "?", "<", ">", "/"];
+let numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 let lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 let upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-let numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
 
 let masterArray = [];
 letrandomPassword = "";
@@ -21,5 +22,10 @@ function generatePassword() {
     if (!passwordLength || passwordLength <= 7 || passwordLength >= 129) {
         return alert("Invalid Response. Please try again.");
     }
+}
+
+let useSpecialCharacters = confirm("Do you want your new password to include special characters?");
+if (useSpecialCharacters === true) {
+    masterArray += specialCharacters;
 }
 
