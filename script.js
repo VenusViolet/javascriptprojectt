@@ -14,3 +14,12 @@ let numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 
 let masterArray = [];
 letrandomPassword = "";
+
+generateBtn.addEventListener("click" , writePassword);
+function generatePassword() {
+    let password = prompt("Please enter the number of characters you want for the new password. It mus be between 8 and 128 characters.");
+    if (!passwordLength || passwordLength <= 7 || passwordLength >= 129) {
+        return alert("Invalid Response. Please try again.");
+    }
+}
+
