@@ -39,3 +39,7 @@ if (useLowerCase === true) {
     masterArray += lowerCase;
 }
 
+let useUpperCase = confirm("Do you want your new password to include uppercase letters?");
+if (useUpperCase === true) {
+    masterArray += upperCase;
+}
