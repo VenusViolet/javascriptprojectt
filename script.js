@@ -29,3 +29,7 @@ if (useSpecialCharacters === true) {
     masterArray += specialCharacters;
 }
 
+let useNumbers = confirm("Do you want your new password to include numbers?");
+if (useNumbers === true) {
+    masterArray += numbers;
+}
